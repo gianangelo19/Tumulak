@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:modelhandling/screen/chat_screen.dart';
 import 'package:modelhandling/screen/homepage.dart';
 import 'package:modelhandling/screen/login_screen.dart';
 import 'package:modelhandling/screen/product_screen.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: LoginPage(),
+      home: ChatPage(username: 'Guest'),
       debugShowCheckedModeBanner: false,
     );
   }
